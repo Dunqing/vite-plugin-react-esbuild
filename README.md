@@ -1,8 +1,14 @@
-# vite-plugin-react-esbuild
+# vite-plugin-react-esbuild [![npm](https://img.shields.io/npm/v/vite-plugin-react-esbuild.svg)](https://npmjs.com/package/vite-plugin-react-esbuild)
 
-[![NPM version](https://img.shields.io/npm/v/vite-plugin-react-esbuild.svg)](https://npmjs.org/package/vite-plugin-react-esbuild)
+- Development. HMR based on react-refresh and babel, transform jsx and ts via esbuild.
+- Production. All using esbuild.
 
-## Install
+## Motivation
+
+Enjoy the speed of esbuild before using it in [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react).
+
+
+## Installation
 
 ```bash
 pnpm add vite-plugin-react-esbuild -D
@@ -12,28 +18,19 @@ pnpm add vite-plugin-react-esbuild -D
 
 ```typescript
 import { defineConfig } from 'vite'
-import plugin from 'vite-plugin-react-esbuild'
+import react from 'vite-plugin-react-esbuild'
 
 export default defineConfig({
-  plugins: [plugin()],
+  plugins: [react({
+  })],
 })
 ```
 
 
 ### Options
 
-#### `include`
+Same options as [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react)
 
-Type: `string` | `Array<string>`<br>
-Default: `[]`
 
-Files to include in this plugin (default all).
-
-#### `exclude`
-
-Type: `string` | `Array<string>`<br>
-Default: `[]`
-
-Files to exclude in this plugin (default none).
 
 [LICENSE (MIT)](/LICENSE)
