@@ -1,39 +1,18 @@
-# [name]
+# vite-plugin-react-esbuild
 
-[![NPM version](https://img.shields.io/npm/v/[name].svg)](https://npmjs.org/package/[name])
-
-## How to use this template?
-
-### Github Template
-
-[Click use this template](https://github.com/Dunqing/vite-plugin-starter/generate)
-
-### Clone to local
-
-```bash
-npx degit Dunqing/vite-plugin-starter vite-plugin-name
-
-cd vite-plugin-name
-
-# Replace all [name] with your package name
-
-pnpm i
-```
-
-
-
+[![NPM version](https://img.shields.io/npm/v/vite-plugin-react-esbuild.svg)](https://npmjs.org/package/vite-plugin-react-esbuild)
 
 ## Install
 
 ```bash
-pnpm add [name] -D
+pnpm add vite-plugin-react-esbuild -D
 ```
 
 ## Usage
 
 ```typescript
 import { defineConfig } from 'vite'
-import plugin from '[name]'
+import plugin from 'vite-plugin-react-esbuild'
 
 export default defineConfig({
   plugins: [plugin()],

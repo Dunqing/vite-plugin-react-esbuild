@@ -10,7 +10,7 @@ interface PluginOptions {
 export default function plugin({ include = [], exclude = [] }: PluginOptions = {}): Plugin {
   const filter = createFilter(include, exclude)
   return {
-    name: '[name]',
+    name: 'vite-plugin-react-esbuild',
     resolveId(id: string) {
       if (!filter(id))
         return undefined
