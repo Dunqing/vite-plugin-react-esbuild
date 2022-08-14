@@ -1,8 +1,28 @@
+import * as path from 'path'
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import plugin from 'vite-plugin-react-esbuild'
+import react from 'vite-plugin-react-esbuild'
+import antdLayout from 'vite-plugin-antd-layout'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), plugin()],
+  resolve: {
+    alias: [
+      {
+        find: /^~/,
+        replacement: '',
+      },
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, 'src'),
+      },
+    ],
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        additionalData: '@root-entry-name: default;',
+      },
+    },
+  },
+  plugins: [react(), antdLayout()],
 })
