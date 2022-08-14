@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-react-esbuild",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "vite-plugin-vite-plugin-react-esbuild",
   "license": "MIT",
   "author": "DengQing <dengqing0821@gmail.com>",
