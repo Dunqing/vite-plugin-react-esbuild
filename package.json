@@ -60,6 +60,6 @@
   },
   "peerDependencies": {
     "vite": "^3.0.0",
-    "esbuild": ">= 0.15.0"
+    "esbuild": ">= 0.14.51"
   }
 }
